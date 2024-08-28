@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tablink active" onclick="openTab(event, 'all')">All</button>
+        <button class="tablink" onclick="openTab(event, 'birds')">Birds</button>
+        <button class="tablink" onclick="openTab(event, 'nature')">Nature</button>
+        <button class="tablink" onclick="openTab(event, 'flower')">Flower</button>
+        <button class="tablink" onclick="openTab(event, 'animals')">Animals</button>
+    </div>
+
+    <div id="all" class="tabcontent active">
+        <div class="gallery">
+            <img src="b1.jpg" alt="Bird Image 1" class="thumbnail" data-large="b1.jpg" data-description="Bluebirds perched on blooming branches" data-category="birds">
+            <img src="n1.jpg" alt="Nature Image 1" class="thumbnail" data-large="n1.jpg" data-description="Mossy rocks, cascading waterfall, lush greenery." data-category="nature">
+            <img src="f1.jpeg" alt="flower Image 1" class="thumbnail" data-large="f1.jpeg" data-description="Dahlias are strikingly beautiful." data-category="flower">
+            <img src="animal1.jpg" alt="Animal Image 1" class="thumbnail" data-large="animal1.jpg" data-description="Puppy and kitten cuddling on grass." data-category="animals">
+            <img src="f2.jpg" alt="flower Image 2" class="thumbnail" data-large="f2.jpg" data-description="Cosmos flowers are colorful." data-category="flower">
+            <img src="b2.jpg" alt="Bird Image 2" class="thumbnail" data-large="b2.jpg" data-description="White cockatoo perched on branch." data-category="birds">
+            <img src="f3.jpg" alt="flower Image 3" class="thumbnail" data-large="f3.jpg" data-description="The aster looks very unique." data-category="flower">
+            <img src="n2.jpg" alt="Nature Image 2" class="thumbnail" data-large="n2.jpg" data-description="Serene river with moored boat" data-category="nature">
+            <img src="animal2.jpg" alt="Animal Image 2" class="thumbnail" data-large="animal2.jpg" data-description="Cute white bunny on rock." data-category="animals">
+            <img src="b3.avif" alt="Bird Image 3" class="thumbnail" data-large="b3.avif" data-description="Colorful bird with outstretched wings." data-category="birds">
+            <img src="f4.jpg" alt="flower Image 4" class="thumbnail" data-large="f4.jpg" data-description="Pink lotus flowers in bloom." data-category="flower">
+            <img src="animal3.jpg" alt="Animal Image 3" class="thumbnail" data-large="animal3.jpg" data-description="Young fawn standing on grass." data-category="animals">
+            <img src="n3.avif" alt="Nature Image 3" class="thumbnail" data-large="n3.avif" data-description="Lone tree in golden field." data-category="nature">
+            <img src="b4.jpg" alt="Bird Image 4" class="thumbnail" data-large="b4.jpg" data-description="Peacock displaying vibrant feathered tail." data-category="birds">
+            <img src="animal4.jpg" alt="Animal Image 4" class="thumbnail" data-large="animal4.jpg" data-description="Tiny tiger standing on grass." data-category="animals">
+            <img src="f5.jpeg" alt="flower Image 5" class="thumbnail" data-large="f5.jpeg" data-description="Primula obconica is beautiful but toxic." data-category="flower">
+            <img src="n4.webp" alt="Nature Image 4" class="thumbnail" data-large="n4.webp" data-description="Crystal ball reflecting lush forest." data-category="nature">
+            <img src="animal5.jpg" alt="Animal Image 5" class="thumbnail" data-large="animal5.jpg" data-description="Small calf resting on grass." data-category="animals">
+            <img src="b5.jpg" alt="Bird Image 5" class="thumbnail" data-large="b5.jpg" data-description="Two chicks, leaf, water droplets." data-category="birds">
+            <img src="n5.webp" alt="Nature Image 5" class="thumbnail" data-large="n5.webp" data-description="Tropical river with palm trees." data-category="nature">
+            <img src="f6.jpg" alt="flower Image 6" class="thumbnail" data-large="f6.jpg" data-description="Its name is Pot Marigold." data-category="flower">
+            <img src="animal6.jpg" alt="Animal Image 6" class="thumbnail" data-large="animal6.jpg" data-description="A rabbit has eight chicks sitting." data-category="animals">
+            <img src="n6.jpg" alt="Nature Image 6" class="thumbnail" data-large="n6.jpg" data-description="Serene lakeside with unique tree." data-category="nature">
+            <img src="b6.jpg" alt="Bird Image 6" class="thumbnail" data-large="b6.jpg" data-description="A vibrant blue bird perched" data-category="birds">
+            <img src="f7.jpg" alt="flower Image 7" class="thumbnail" data-large="f7.jpg" data-description="Roses are multicolored." data-category="flower">
+            <img src="animal7.jpg" alt="Animal Image 7" class="thumbnail" data-large="animal7.jpg" data-description="A cow is watching you." data-category="animals">
+            <img src="n7.jpg" alt="Nature Image 7" class="thumbnail" data-large="n7.jpg" data-description="Scenic mountain village landscape view" data-category="nature">
+            <img src="b7.jpg" alt="Bird Image 7" class="thumbnail" data-large="b7.jpg" data-description="Hummingbird hovering with spread wings" data-category="birds">
+        </div>
+    </div>
+
+    <!-- Similarly for other tabs -->
+    
+    <div id="birds" class="tabcontent">
+        <div class="gallery">
+            <!-- Only bird images -->
+            <img src="b1.jpg" alt="Bird Image 1" class="thumbnail" data-large="b1.jpg" data-description="Bluebirds perched on blooming branches" data-category="birds">
+            <img src="b2.jpg" alt="Bird Image 2" class="thumbnail" data-large="b2.jpg" data-description="White cockatoo perched on branch" data-category="birds">
+            <img src="b3.avif" alt="Bird Image 3" class="thumbnail" data-large="b3.avif" data-description="Colorful bird with outstretched wings" data-category="birds">
+            <img src="b4.jpg" alt="Bird Image 4" class="thumbnail" data-large="b4.jpg" data-description="Peacock displaying vibrant feathered tail" data-category="birds">
+            <img src="b5.jpg" alt="Bird Image 5" class="thumbnail" data-large="b5.jpg" data-description="Two chicks, leaf, water droplets" data-category="birds">
+            <img src="b6.jpg" alt="Bird Image 6" class="thumbnail" data-large="b6.jpg" data-description="A vibrant blue bird perched" data-category="birds">
+            <img src="b7.jpg" alt="Bird Image 7" class="thumbnail" data-large="b7.jpg" data-description="Hummingbird hovering with spread wings" data-category="birds">
+        </div>
+    </div>
+  
+    <div id="nature" class="tabcontent">
+        <div class="gallery">
+            <!-- Only nature images -->
+            <img src="n1.jpg" alt="Nature Image 1" class="thumbnail" data-large="n1.jpg" data-description="Mossy rocks, cascading waterfall, lush greenery." data-category="nature">
+            <img src="n2.jpg" alt="Nature Image 2" class="thumbnail" data-large="n2.jpg" data-description="Serene river with moored boat." data-category="nature">
+            <img src="n3.avif" alt="Nature Image 3" class="thumbnail" data-large="n3.avif" data-description="Lone tree in golden field." data-category="nature">
+            <img src="n4.webp" alt="Nature Image 4" class="thumbnail" data-large="n4.webp" data-description="Crystal ball reflecting lush forest." data-category="nature">
+            <img src="n5.webp" alt="Nature Image 5" class="thumbnail" data-large="n5.webp" data-description="Tropical river with palm trees." data-category="nature">
+            <img src="n6.jpg" alt="Nature Image 6" class="thumbnail" data-large="n6.jpg" data-description="Serene lakeside with unique tree." data-category="nature">
+            <img src="n7.jpg" alt="Nature Image 7" class="thumbnail" data-large="n7.jpg" data-description="Scenic mountain village landscape view." data-category="nature">
+        </div>
+    </div>
+  
+    <div id="flower" class="tabcontent">
+        <div class="gallery">
+            <!-- Only flower images -->
+            <img src="f1.jpeg" alt="flower Image 1" class="thumbnail" data-large="f1.jpeg" data-description="Dahlias are strikingly beautiful." data-category="flower">
+            <img src="f2.jpg" alt="flower Image 2" class="thumbnail" data-large="f2.jpg" data-description="Cosmos flowers are colorful." data-category="flower">
+            <img src="f3.jpg" alt="flower Image 3" class="thumbnail" data-large="f3.jpg" data-description="The aster looks very unique." data-category="flower">
+            <img src="f4.jpg" alt="flower Image 4" class="thumbnail" data-large="f4.jpg" data-description="Pink lotus flowers in bloom." data-category="flower">
+            <img src="f5.jpeg" alt="flower Image 5" class="thumbnail" data-large="f5.jpeg" data-description="Primula obconica is beautiful but toxic." data-category="flower">
+            <img src="f6.jpg" alt="flower Image 6" class="thumbnail" data-large="f6.jpg" data-description="Its name is Pot Marigold." data-category="flower">
+            <img src="f7.jpg" alt="flower Image 7" class="thumbnail" data-large="f7.jpg" data-description="Roses are multicolored." data-category="flower">
+        </div>
+    </div>
+  
+    <div id="animals" class="tabcontent">
+        <div class="gallery">
+            <!-- Only animals images -->
+            <img src="animal1.jpg" alt="Animal Image 1" class="thumbnail" data-large="animal1.jpg" data-description="Puppy and kitten cuddling on grass" data-category="animals">
+            <img src="animal2.jpg" alt="Animal Image 2" class="thumbnail" data-large="animal2.jpg" data-description="Cute white bunny on rock" data-category="animals">
+            <img src="animal3.jpg" alt="Animal Image 3" class="thumbnail" data-large="animal3.jpg" data-description="Young fawn standing on grass" data-category="animals">
+            <img src="animal4.jpg" alt="Animal Image 4" class="thumbnail" data-large="animal4.jpg" data-description="Tiny tiger standing on grass" data-category="animals">
+            <img src="animal5.jpg" alt="Animal Image 5" class="thumbnail" data-large="animal5.jpg" data-description="Small calf resting on grass" data-category="animals">
+            <img src="animal6.jpg" alt="Animal Image 6" class="thumbnail" data-large="animal6.jpg" data-description="A rabbit has eight chicks sitting" data-category="animals">
+            <img src="animal7.jpg" alt="Animal Image 7" class="thumbnail" data-large="animal7.jpg" data-description="A cow is watching you" data-category="animals">
+        </div>
+    </div>
+  
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" id="lightbox-image">
+        <div class="description" id="description"></div>
+        <a class="prev" id="prev">&#10094;</a>
+        <a class="next" id="next">&#10095;</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

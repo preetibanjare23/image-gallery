@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/041/453/082/non_2x/collage-photo-frame-illustration-with-background-presentation-photo-frame-film-isolated-photo-gallery-clip-art-set-feminine-photograph-event-presentation-vector.jpg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1.5s ease-in-out;
+    max-width: 800px; /* Constraining width for larger screens */
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff9800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: bounceIn 2s ease-in-out;
+}
+
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.button-container .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ff9800;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 152, 0, 0.7); /* Added shadow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.button-container .btn:hover {
+    background-color: #e65100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(230, 81, 0, 0.8); /* Enhanced shadow on hover */
+}
+
+/* Animations */
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .button-container .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    .button-container .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
